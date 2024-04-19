@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,4 +8,55 @@
 
 body {
     background-color: #dcecfa;
+    font-family: "DM Sans", sans-serif;
+}
+
+.page-1 {
+    background-image: url("../images/martins-zemlickis-NPFu4GfFZ7E-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    border: 1px solid red;
+    height: 25vh;
+
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.main-title {
+    border: 1px solid red;
+    
+    margin-left: 5rem;
+    padding: 2px;
+    width: auto;
+    font-size: 40px;
+    background-color: #ffffff45;
+    
+}
+
+.main-button {
+    border: 1px solid red;
+
+    margin-right: 2rem;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: large;
+    letter-spacing: 2px;
+    border-radius: 0 25px 25px 0;
+    background: linear-gradient(0.25turn, #dcecfa, #cae3f7, #5faae7);
+}
+
+.main-button:hover {
+    cursor: pointer;
+    box-shadow: -4px -4px;
+    transform: scale(104%) translate(4px, 10%);
 }
