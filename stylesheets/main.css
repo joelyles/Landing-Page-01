@@ -9,6 +9,7 @@
 body {
     background-color: #dcecfa;
     font-family: "DM Sans", sans-serif;
+    --lt-txt-color: #e7ecef;
 }
 
 .page-1 {
@@ -17,11 +18,13 @@ body {
     height: 100vh;
 }
 
-.header {
-    border: 1px solid red;
-    height: 25vh;
+/* Page 1 Header */
 
-    padding: 2px;
+.header {
+    /* border: 1px solid red; */
+    height: 10vh;
+
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,13 +32,14 @@ body {
 }
 
 .main-title {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
-    margin-left: 5rem;
-    padding: 2px;
+    margin-left: 2rem;
+    padding: 5px;
     width: auto;
-    font-size: 40px;
-    background-color: #ffffff45;
+    font-size: 4vh;
+    /* background-color: #1e3b5c; */
+    color: var(--lt-txt-color)
     
 }
 
@@ -59,4 +63,40 @@ body {
     cursor: pointer;
     box-shadow: -4px -4px;
     transform: scale(104%) translate(4px, 10%);
+}
+
+/* Page 1 Body */
+
+.p1-body {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.race-date {
+    border: 1px solid red;
+    grid-area: 4 / 1 / 4 / 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    color: var(--lt-txt-color);
+    font-size: 4vh;
+}
+
+.learn-more {
+    border: 1px solid red;
+    grid-area: 4 / 4 / 4 / 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    color: var(--lt-txt-color);
+}
+
+.page-2 {
+    height: 100vh;
 }
