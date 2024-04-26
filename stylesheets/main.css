@@ -109,13 +109,17 @@ body {
     backdrop-filter: blur(10px) contrast(50%);
 }
 
+.modal:hover {
+    cursor: pointer;
+}
+
 .show {
     top: 0%;
     bottom: 0%;
     margin-top: auto;
     margin-bottom: auto;
     z-index: 1;
-    box-shadow: 0 0 3em;
+    box-shadow: 0 0 5em;
 }
 
 .exit {
@@ -161,6 +165,15 @@ body {
 
 .page-2 {
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.footer {
+    grid-area: 5 / 1 / 5 / 5;
+    display: flex;
+    align-items: flex-end;
 }
 
 @media (max-width: 770px) {

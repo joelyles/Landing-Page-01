@@ -1,10 +1,13 @@
 const modalBox = document.querySelector(".sign-up-modal");
-const mainButton = document.querySelector(".main-button");
+const modal = document.querySelectorAll(".modal");
 const exitButton = document.querySelector(".exit");
 
-mainButton.addEventListener("click", () => {
-    modalBox.classList.toggle("show");
-})
+for (let i = 0; i < modal.length; i++) {
+    modal[i].addEventListener("click", () => {
+        modalBox.classList.toggle("show");
+        window.scrollTo(top);
+    })
+}
 
 exitButton.addEventListener("click", () => {
     modalBox.classList.toggle("show");
