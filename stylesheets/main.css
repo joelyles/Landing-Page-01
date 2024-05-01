@@ -28,8 +28,8 @@ body {
 
 .header {
     /* border: 1px solid red; */
-    height: 10vh;
-
+    background-color: #101518;
+    height: 35px;
     padding: 0px;
     display: flex;
     justify-content: space-between;
@@ -39,27 +39,41 @@ body {
 
 .main-title {
     /* border: 1px solid red; */
-    
-    margin-left: 2rem;
-    padding: 5px;
-    width: auto;
-    font-size: 4vh;
+    position: absolute;
+    z-index: 2;
+    background-color: #101518;
+    top: 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding-top: 24px;
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+    text-align: center;
     color: var(--lt-txt-color);
-    
 }
 
-.main-button {
+.main-button-left {
+    margin-left: 2rem;
+    color: var(--lt-txt-color);
+    font-size: 15px;
+    padding: .5rem;
+}
+
+.main-button-right {
     margin-right: 2rem;
     color: var(--lt-txt-color);
-    font-size: 2vh;
+    font-size: 15px;
     padding: .5rem;
 }
 
-.main-button:hover {
+.main-button-left:hover, .main-button-right:hover {
     font-style: normal;
-    outline: 2px solid var(--lt-txt-color);
     cursor: pointer;
-    padding: .5rem;
+    color: #7895A5;
+   /*  outline: 2px solid var(--lt-txt-color);
+    padding: .5rem; */
 }
 
 /* .main-button {
